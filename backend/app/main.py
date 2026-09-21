@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import ValidationError
 
-from .config import MAX_UPLOAD_BYTES, gemini_configured, is_demo_mode
+from .config import MAX_UPLOAD_BYTES, gemini_configured, is_demo_mode, ALLOWED_ORIGINS
 from .documents import DocumentError, validate_upload
 from .models import ChatRequest, CompareRequest, PropertyInput, WeightUpdate
 from . import gemini as gemini_mod
@@ -19,7 +19,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
