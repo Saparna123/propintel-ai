@@ -1,0 +1,11 @@
+{
+  "name": "infoys-root",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"cd backend && python -m uvicorn app.main:app --reload --port 8000\"",
+    "install:all": "npm install && npm install --prefix frontend && cd backend && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
