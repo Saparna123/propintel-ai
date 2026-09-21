@@ -64,4 +64,4 @@ Open `http://localhost:5173`. The Vite dev server proxies `/api` to port 8000.
 
 ## Disclaimer
 
-PropIntel AI provides AI-assisted analytical insights based on available data. Results may be incomplete or subject to data limitations and should not be treated as legal, financial, valuation, or investment advice. Users should independently verify relevant information through appropriate authoritative sources.
+PropIntel AI provides AI-assisted analytical insights based on available data. Results may be incomplete or subject to data limitations and should not be treated as legal, financial, valuation, or investment advice. Users should independently verify relevant information through appropriate authoritative sources.................
